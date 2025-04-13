@@ -3,10 +3,11 @@
 import asyncio
 import time
 from socket import gethostbyname
-from asyncio import Lock
+from asyncio import Lock, Semaphore
 
 start_time = time.time()
 print_lock = Lock()
+sem = Semaphore(100) 
 
 # Dictionary to label well-known ports
 PORT_LABELS = {
