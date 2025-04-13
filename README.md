@@ -7,6 +7,7 @@ A fast and efficient port scanner built with `asyncio` in Python, designed to sc
 - Asynchronous scanning using `asyncio` for faster execution.
 - Labels known ports with human-readable names (e.g., HTTP, SSH, SMTP).
 - Reports only **open** ports, keeping the output clean and readable.
+- Semaphore to limit concurrency (default: 100 threads)
 - Easy-to-use command-line interface (CLI).
 
 ## Installation
